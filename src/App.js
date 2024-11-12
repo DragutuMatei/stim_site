@@ -6,6 +6,8 @@ function App() {
     <>
       <div className="idk">
         <h1>Revenim curând!</h1>
+<br/>
+<h2>STIM noi suntem viitorul </h2>
       </div>
     </>
   );
