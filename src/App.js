@@ -59,7 +59,7 @@ const App = () => {
   // Datele membrilor board-ului
   const boardMembers = [
     { name: 'Cristiana Cazacu', role: 'Președinte', desc: 'Profesor în cadrul FIIR Departamentul RSP', email: 'cristiana.cazacu@stim-ong.ro', image: 'https://i1.rgstatic.net/ii/profile.image/11431281230335305-1710896832658_Q512/Carmen-Cristiana-Cazacu.jpg' },
-    { name: 'Mihail Hanga', role: 'Vicepreședinte Monitorizare Activități', desc: 'FIIR-UNSTPB', email: 'mihail.hanga@stim-ong.ro', image: 'https://scontent-otp1-1.xx.fbcdn.net/v/t39.30808-6/506198731_9850087148372430_1244890785047121417_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=hcOVBkZXwPwQ7kNvwFm3qsb&_nc_oc=Adl0nbMXA80aICgc2FlaVs_0CLk-1V5DDpePcFHzpzlmKMB952G-ULtIvHE08T23UvU&_nc_zt=23&_nc_ht=scontent-otp1-1.xx&_nc_gid=ojXnWHmTNXvrx6FLmTFjxg&oh=00_AfuvqwSxpWmIJaZS9qf6CKjwBaTjbbmn9dZ6jjm8Jns6zA&oe=699ABCFC' },
+    { name: 'Mihail Hanga', role: 'Vicepreședinte Monitorizare Activități', desc: 'FIIR-UNSTPB', email: 'mihail.hanga@stim-ong.ro', image: 'https://osfiir.ro/static/media/hanga.d9a360c653130a7584a2.png' },
     { name: 'Ștefan Cula', role: 'Vicepreședinte Educație și Formare', desc: 'FIIR-UNSTPB', email: 'stefan.cula@stim-ong.ro', image: 'https://dropinblog.net/cdn-cgi/image/fit=scale-down,width=600/34254246/authors/WhatsApp%20Image%202025-03-18%20at%2015.10.47.jpeg' },
     { name: 'Delia Gheorghe Naftaila', role: 'Vicepreședinte Logistic', desc: 'FIIR-UNSTPB', email: 'delia.gheorghe@stim-ong.ro', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzwV3FxVE70-BZZC5BJ-37X_gzTPj4OrepLg&s' },
   ];
