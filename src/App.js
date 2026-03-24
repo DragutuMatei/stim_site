@@ -65,7 +65,7 @@ const App = () => {
   ];
 
   const projects = [
-    { title: 'Clubul de Inventică și Robotică de la Școala Gimnazială Nr. 2 din Chitila', category: 'EDUCAȚIE', desc: 'Ne-am propus să oferim un cadru de învățare aplicată, unde conceptele STEAM prind formă prin proiecte tehnice reale.', image: 'https://scontent-otp1-1.xx.fbcdn.net/v/t39.30808-6/627815442_122166320978745901_8759110299989006647_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_ohc=pOveJ2B10tgQ7kNvwHGFY3H&_nc_oc=Adllpx_uVdLOyhQTZiiU_kagXKjuG0Fc186eJoRIel_9E9_M4sYgF3zTNIT7KHH6fvg&_nc_zt=23&_nc_ht=scontent-otp1-1.xx&_nc_gid=Rx3XU5Ut6XzGGLJOomLPIg&oh=00_AfuvawjhZUobO2Cu1DwaC877F9poJBejMieK67I4ysAxhA&oe=699AD661', available: true, link: 'https://ro.linkedin.com/posts/%C8%99tim-noi-suntem-viitorul_stim-fiirbots-steam-activity-7429573161530236928-7Fuu?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy' },
+    { title: 'Clubul de Inventică și Robotică de la Școala Gimnazială Nr. 2 din Chitila', category: 'EDUCAȚIE', desc: 'Ne-am propus să oferim un cadru de învățare aplicată, unde conceptele STEAM prind formă prin proiecte tehnice reale.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYfU9T-I-3bQ9BdxF9CnHXbMSaaw0M9x26NQ&s', available: true, link: 'https://ro.linkedin.com/posts/%C8%99tim-noi-suntem-viitorul_stim-fiirbots-steam-activity-7429573161530236928-7Fuu?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy' },
     { title: 'Proiect Nou 2026', category: 'VIITOR', desc: 'Pregătim ceva special pentru comunitatea noastră.', image: null, available: false },
   ];
 
