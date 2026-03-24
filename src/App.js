@@ -62,6 +62,7 @@ const App = () => {
     { name: 'Mihail Hanga', role: 'Vicepreședinte Monitorizare Activități', desc: 'FIIR-UNSTPB', email: 'mihail.hanga@stim-ong.ro', image: 'https://osfiir.ro/static/media/hanga.d9a360c653130a7584a2.png' },
     { name: 'Ștefan Cula', role: 'Vicepreședinte Educație și Formare', desc: 'FIIR-UNSTPB', email: 'stefan.cula@stim-ong.ro', image: 'https://dropinblog.net/cdn-cgi/image/fit=scale-down,width=600/34254246/authors/WhatsApp%20Image%202025-03-18%20at%2015.10.47.jpeg' },
     { name: 'Delia Gheorghe Naftaila', role: 'Vicepreședinte Logistic', desc: 'FIIR-UNSTPB', email: 'delia.gheorghe@stim-ong.ro', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzwV3FxVE70-BZZC5BJ-37X_gzTPj4OrepLg&s' },
+    { name: 'Oana Burtoi-Giurgea', role: 'Vicepreședinte Comunicare și PR', desc: 'FIIR-UNSTPB', email: 'oana.burtoi@stim-ong.ro', image: 'https://media.licdn.com/dms/image/v2/D4E03AQH7VnJ1TJ_VIQ/profile-displayphoto-scale_200_200/B4EZqMYpQgHUAc-/0/1763291868585?e=2147483647&v=beta&t=ZQL4_cDuxu4yIFO8erKo1dhw5ycBNNCJfUks2jN70KY' },
   ];
 
   const projects = [
