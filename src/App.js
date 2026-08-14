@@ -5,7 +5,9 @@ import './App.css';
 
 const App = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDonationModalOpen, setIsDonationModalOpen] = useState(false); // <-- ADĂUGAT AICI
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
+  
 
   const calculateTimeProgress = () => {
     const today = new Date();
@@ -218,23 +220,68 @@ const App = () => {
       </section>
 
       {/* Donation Section */}
-      <section id="donate" className="py-16 bg-[#FEF9EF] dark:bg-[#0B1120] relative">
-        <div className="max-w-screen-xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <span className="px-3 py-1 bg-[#5D3FD3]/10 text-[#5D3FD3] text-xs font-bold uppercase rounded-full tracking-wider inline-block mb-2">
+      <section id="donate" className="py-20 bg-[#FEF9EF] dark:bg-[#0B1120] relative overflow-hidden">
+        <div className="max-w-screen-xl mx-auto px-4 text-center">
+          <div className="max-w-3xl mx-auto space-y-6">
+            <span className="px-3 py-1 bg-[#5D3FD3]/10 text-[#5D3FD3] text-xs font-bold uppercase rounded-full tracking-wider inline-block">
               Susține Educația STEAM
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold font-display text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold font-display text-gray-900 dark:text-white">
               Suntem recunoscători pentru orice sprijin!
             </h2>
-            <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
-              Fiecare donație ne ajută să continuăm proiectele educaționale și să susținem tinerii pasionați de tehnologie.
+            <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+              Fiecare donație ne ajută să dotăm atelierele de robotică, să organizăm cursuri practice și să inspirăm tinerii pasionați de tehnologie din România.
             </p>
-          </div>
 
-          {/* Frame container */}
-          <div className="flex justify-center items-center">
-            <div className="w-full max-w-[500px] bg-white dark:bg-[#15253E] p-2 md:p-6 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700">
+            {/* Butonul de Deschidere a Formularului */}
+            <div className="pt-4">
+              <button
+                type="button"
+                onClick={() => setIsDonationModalOpen(true)}
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white rounded-full bg-gradient-to-r from-[#5D3FD3] to-purple-600 hover:from-[#4b32b0] hover:to-purple-700 shadow-xl shadow-purple-500/30 transition-all transform hover:scale-105 active:scale-95 cursor-pointer"
+              >
+                <span className="material-icons mr-2 text-xl">favorite</span>
+                Donează acum
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Donation Popup Modal */}
+      {isDonationModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+          {/* Click pe fundal pentru a închide */}
+          <div
+            className="absolute inset-0"
+            onClick={() => setIsDonationModalOpen(false)}
+          ></div>
+
+          {/* Fereastra Formularului */}
+          <div className="relative z-10 w-full max-w-[520px] bg-white dark:bg-[#15253E] rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden max-h-[92vh] flex flex-col">
+            {/* Header Modal */}
+            <div className="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+              <div className="flex items-center space-x-2">
+                <div className="w-7 h-7 bg-[#5D3FD3] rounded-md flex items-center justify-center text-white overflow-hidden">
+                  <LogoSTIM />
+                </div>
+                <span className="font-bold font-display text-gray-900 dark:text-white">
+                  Susține STIM
+                </span>
+              </div>
+              <button
+                onClick={() => setIsDonationModalOpen(false)}
+                className="text-gray-400 hover:text-gray-600 dark:hover:text-white p-1 rounded-lg transition-colors focus:outline-none"
+                title="Închide"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Corp Modal cu Iframe */}
+            <div className="overflow-y-auto p-2 md:p-4 flex justify-center">
               <iframe
                 src="https://donorbox.org/embed/donation-stim?"
                 name="donorbox"
@@ -242,14 +289,14 @@ const App = () => {
                 seamless="seamless"
                 frameBorder="0"
                 scrolling="no"
-                height="900px"
+                height="800px"
                 width="100%"
                 style={{
-                  maxWidth: '500px',
+                  maxWidth: '480px',
                   minWidth: '250px',
                   maxHeight: 'none',
                   border: 'none',
-                  borderRadius: '12px'
+                  borderRadius: '8px'
                 }}
                 allow="payment"
                 title="Donatii STIM"
@@ -257,8 +304,7 @@ const App = () => {
             </div>
           </div>
         </div>
-      </section>
-
+      )}
       {/* Despre Section */}
       <section id="about" className="py-20 bg-[#FEF9EF] dark:bg-[#0B1120]">
         <div className="max-w-screen-xl mx-auto px-4">
