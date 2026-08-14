@@ -113,6 +113,9 @@ const App = () => {
               <li>
                 <a href="#projects" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5D3FD3] md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent border-b-2 border-transparent hover:border-[#5D3FD3] transition-all">Proiecte</a>
               </li>
+              <li>
+                <a href="#donate" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#5D3FD3] md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent border-b-2 border-transparent hover:border-[#5D3FD3] transition-all">Donează</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -209,6 +212,48 @@ const App = () => {
                 Completează Formularul
                 <span className="material-icons ml-2">assignment</span>
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Donation Section */}
+      <section id="donate" className="py-16 bg-[#FEF9EF] dark:bg-[#0B1120] relative">
+        <div className="max-w-screen-xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <span className="px-3 py-1 bg-[#5D3FD3]/10 text-[#5D3FD3] text-xs font-bold uppercase rounded-full tracking-wider inline-block mb-2">
+              Susține Educația STEAM
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold font-display text-gray-900 dark:text-white mb-4">
+              Suntem recunoscători pentru orice sprijin!
+            </h2>
+            <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+              Fiecare donație ne ajută să continuăm proiectele educaționale și să susținem tinerii pasionați de tehnologie.
+            </p>
+          </div>
+
+          {/* Frame container */}
+          <div className="flex justify-center items-center">
+            <div className="w-full max-w-[500px] bg-white dark:bg-[#15253E] p-2 md:p-6 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700">
+              <iframe
+                src="https://donorbox.org/embed/donation-stim?"
+                name="donorbox"
+                allowPaymentRequest="true"
+                seamless="seamless"
+                frameBorder="0"
+                scrolling="no"
+                height="900px"
+                width="100%"
+                style={{
+                  maxWidth: '500px',
+                  minWidth: '250px',
+                  maxHeight: 'none',
+                  border: 'none',
+                  borderRadius: '12px'
+                }}
+                allow="payment"
+                title="Donatii STIM"
+              ></iframe>
             </div>
           </div>
         </div>
