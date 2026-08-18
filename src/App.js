@@ -68,7 +68,7 @@ const App = () => {
   ];
 
   const projects = [
-    { title: 'Clubul de Inventică și Robotică de la Școala Gimnazială Nr. 2 din Chitila', category: 'EDUCAȚIE', desc: 'Ne-am propus să oferim un cadru de învățare aplicată, unde conceptele STEAM prind formă prin proiecte tehnice reale.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYfU9T-I-3bQ9BdxF9CnHXbMSaaw0M9x26NQ&s', available: true, link: 'https://ro.linkedin.com/posts/%C8%99tim-noi-suntem-viitorul_stim-fiirbots-steam-activity-7429573161530236928-7Fuu?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy' },
+    { title: 'Clubul de Inventică și Robotică de la Școala Gimnazială Nr. 2 din Chitila', category: 'EDUCAȚIE', desc: 'Ne-am propus să oferim un cadru de învățare aplicată, unde conceptele STEAM prind formă prin proiecte tehnice reale.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYfU9T-I-3bQ9BdxF9CnHXbMSaaw0M9x26NQ&s', available: true, link: 'https://www.linkedin.com/feed/update/urn:li:activity:7429906292917465088' },
     { title: 'Proiect Nou 2026', category: 'VIITOR', desc: 'Pregătim ceva special pentru comunitatea noastră.', image: null, available: false },
   ];
 
